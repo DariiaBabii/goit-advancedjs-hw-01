@@ -1,0 +1,26 @@
+{
+  "name": "goit-advancedjs-hw-01",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npx vite",
+    "build": "npx vite build --base=/goit-advancedjs-hw-01/",
+    "preview": "npx vite preview",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "glob": "^8.1.0",
+    "vite": "^4.5.2"
+  },
+  "author": "Dariia Babii <dariiababii02@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@vimeo/player": "^2.23.0",
+    "lodash": "^4.17.21",
+    "lodash.throttle": "^4.1.1",
+    "simplelightbox": "^2.14.3",
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-html-inject": "^1.0.1"
+  }
+}
