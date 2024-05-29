@@ -3,11 +3,9 @@ import Player from "@vimeo/player";
 
 const iframe = document.querySelector("iframe");
 const player = new Player(iframe);
-
 const updatePlaybackTime = (data) => {
   localStorage.setItem("videoplayer-current-time", data.seconds);
 };
-
 const throttledUpdatePlaybackTime = throttle(updatePlaybackTime, 1000);
 
 player.on("timeupdate", throttledUpdatePlaybackTime);
@@ -31,7 +29,7 @@ if (savedTime) {
 }
 
 player.on("play", function () {
-  console.log("played the video!");
+  console.log("Played the video!");
 });
 
 player.getVideoTitle().then(function (title) {
